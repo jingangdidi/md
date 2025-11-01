@@ -1,0 +1,13 @@
+[package]
+name = "md"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+opt-level = 3
+panic = "abort"
+strip = true
+
+[dependencies]
+argh = { version = "0.1.10" }
+thiserror = { version = "1.0" }

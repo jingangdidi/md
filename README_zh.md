@@ -50,4 +50,4 @@ Options:
 - [highlight.js](https://github.com/highlightjs/highlight.js)
 
 ## ⏰ 更新记录
-- [2025.11.01] release v0.1.0
+- [2025.11.03] release v0.1.0

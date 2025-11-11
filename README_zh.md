@@ -20,7 +20,7 @@
 **2. 命令行调用**
 
 ```
-./md -f README.md
+./mkd -f README.md
 ```
 生成`README.html`
 
@@ -33,7 +33,7 @@ cargo build --release
 
 ## 🚥 命令行参数
 ```
-Usage: md -f <file> [-l <language>] [-w <width>] [-o <outpath>]
+Usage: mkd -f <file> [-l <language>] [-w <width>] [-o <outpath>]
 
 render markdown, save as html file
 
@@ -50,4 +50,6 @@ Options:
 - [highlight.js](https://github.com/highlightjs/highlight.js)
 
 ## ⏰ 更新记录
-- [2025.11.03] release v0.1.0
+- [2025.11.11] release [v0.1.1](https://github.com/jingangdidi/md/releases/tag/v0.1.1)
+  - 🛠修复：将`\`转义为`\\`
+- [2025.11.03] release [v0.1.0](https://github.com/jingangdidi/md/releases/tag/v0.1.0)

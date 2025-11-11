@@ -10,7 +10,7 @@ pub fn render_md(files: Vec<PathBuf>, language: &str, width: u8, outpath: &Path)
     for f in files {
         match read_to_string(&f) {
             Ok(content) => {
-                let mut html = MARKDOWN.replace("let content = ``;", &format!("let content = `{}`;", content.replace("`", "\\`")));
+                let mut html = MARKDOWN.replace("let content = ``;", &format!("let content = `{}`;", content.replace("\\", "\\\\").replace("`", "\\`")));
                 if language != "en" {
                     html = html.replace("lang: 'en'", &format!("lang: '{}'", language));
                 }

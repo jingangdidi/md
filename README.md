@@ -17,7 +17,7 @@
 
 **2. convert markdown to html**
 ```
-./md -f README.md
+./mkd -f README.md
 ```
 This will create `README.html`
 
@@ -30,7 +30,7 @@ cargo build --release
 
 ## 🚥 Arguments
 ```
-Usage: md -f <file> [-l <language>] [-w <width>] [-o <outpath>]
+Usage: mkd -f <file> [-l <language>] [-w <width>] [-o <outpath>]
 
 render markdown, save as html file
 
@@ -47,4 +47,6 @@ Options:
 - [highlight.js](https://github.com/highlightjs/highlight.js)
 
 ## ⏰ changelog
-- [2025.11.03] release v0.1.0
+- [2025.11.11] release [v0.1.1](https://github.com/jingangdidi/md/releases/tag/v0.1.1)
+  - 🛠Fix: Escape `\` as `\\`
+- [2025.11.03] release [v0.1.0](https://github.com/jingangdidi/md/releases/tag/v0.1.0)

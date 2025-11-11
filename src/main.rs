@@ -1,4 +1,4 @@
-use md::{
+use mkd::{
     parse_paras::parse_para,
     markdown::render_md,
     error::MyError,
